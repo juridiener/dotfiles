@@ -14,6 +14,24 @@ https://www.atlassian.com/git/tutorials/dotfiles
 - config commit -m "Add bashrc"
 - config push
 
+# set remote URl
+
+#set a new remote
+
+- git remote add my_awesome_new_remote_repo git@git.assembla.com:portfolio/space.space_name.git
+
+
+#Verify new remote
+
+- git remote -v
+
+## Push
+
+- git push <your_remote_name>
+
+- #git push my_awesome_new_remote_repo
+
+
 # Install your dotfiles onto a new system (or migrate to this setup)
 
 Prior to the installation make sure you have committed the alias to your .bashrc or .zsh: 
