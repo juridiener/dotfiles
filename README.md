@@ -14,7 +14,7 @@ https://www.atlassian.com/git/tutorials/dotfiles
 - config commit -m "Add bashrc"
 - config push
 
-#Install your dotfiles onto a new system (or migrate to this setup)
+# Install your dotfiles onto a new system (or migrate to this setup)
 
 Prior to the installation make sure you have committed the alias to your .bashrc or .zsh: 
 - alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
