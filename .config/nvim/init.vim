@@ -5,13 +5,13 @@ source ~/.config/nvim/plug-install.vim
 source ~/.config/nvim/defaults.vim
 
 " Defaults Keybindings
-source ~/.config/nvim/keybindings.vim
+source ~/.config/nvim/mappings.vim
 
 " Autosafe by losing focus
 source ~/.config/nvim/functions.vim
 
 " lsp config
-source ~/.config/nvim/plug-config/lsp-config.vim
+"source ~/.config/nvim/plug-config/lsp-config.vim
 
 luafile ~/.config/nvim/plug-config/lua/compe-config.lua
 luafile ~/.config/nvim/plug-config/lua/lsp.lua

@@ -16,8 +16,10 @@ set ignorecase      " case insensitive
 set hlsearch        " highlight search
 set incsearch       " incremental search
 set tabstop=2	    " number of columns by tab
-set encoding=UTF-8
+set encoding=utf8
+set guifont=DroidSansMono\ Nerd\ Font:h11
 set guifont=DroidSansMono_Nerd_Font:h11
+"set guifont=DroidSansMono_Nerd_Font:h11
 set softtabstop=2 " see multiple spaces as tabstops
 set expandtab       " converts tabs to white space
 set shiftwidth=2  " width for autoindents
@@ -46,3 +48,4 @@ set clipboard=unnamed,unnamedplus
 " open new split panes to right and below
 set splitright
 set splitbelow
+let g:airline_powerline_fonts = 1

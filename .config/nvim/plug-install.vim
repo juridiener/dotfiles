@@ -8,7 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'mhinz/vim-startify'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
@@ -19,7 +18,5 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
