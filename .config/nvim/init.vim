@@ -13,6 +13,8 @@ source ~/.config/nvim/functions.vim
 " lsp config
 "source ~/.config/nvim/plug-config/lsp-config.vim
 
+luafile ~/.config/nvim/plug-config/lua/treesitter.lua
 luafile ~/.config/nvim/plug-config/lua/compe-config.lua
 luafile ~/.config/nvim/plug-config/lua/lsp.lua
 luafile ~/.config/nvim/plug-config/lua/telescope.lua
+"luafile ~/.config/nvim/plug-config/lua/lspsaga.lua

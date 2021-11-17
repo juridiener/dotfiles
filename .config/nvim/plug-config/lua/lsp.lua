@@ -1,34 +1,3 @@
---require'lspconfig'.pyright.setup{}
---require'lspconfig'.dockerls.setup{}
---require'lspconfig'.graphql.setup{}
---require'lspconfig'.tsserver.setup{}
---require'lspconfig'.vimls.setup{}
---require'lspconfig'.vuels.setup{}
---require'lspconfig'.yamlls.setup{}
---
---local capabilities = vim.lsp.protocol.make_client_capabilities()
---capabilities.textDocument.completion.completionItem.snippetSupport = true
---
---require'lspconfig'.cssls.setup {
---  capabilities = capabilities,
---}
---
-----Enable (broadcasting) snippet capability for completion
---local capabilities = vim.lsp.protocol.make_client_capabilities()
---capabilities.textDocument.completion.completionItem.snippetSupport = true
---
---require'lspconfig'.html.setup {
---  capabilities = capabilities,
---}
---
-----Enable (broadcasting) snippet capability for completion
---local capabilities = vim.lsp.protocol.make_client_capabilities()
---capabilities.textDocument.completion.completionItem.snippetSupport = true
---
---require'lspconfig'.jsonls.setup {
---  capabilities = capabilities,
---}
-
 local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -75,3 +44,7 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+
+
+-- https://github.com/mhartington/dotfiles/blob/main/config/nvim/lua/mh/lsp/init.lua
