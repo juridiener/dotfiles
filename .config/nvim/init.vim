@@ -7,8 +7,9 @@ source ~/.config/nvim/defaults.vim
 " Defaults Keybindings
 source ~/.config/nvim/mappings.vim
 
-" Autosafe by losing focus
-source ~/.config/nvim/functions.vim
+" functions
+source ~/.config/nvim/functions/autosave.vim
+source ~/.config/nvim/functions/folding.vim
 
 " lsp config
 "source ~/.config/nvim/plug-config/lsp-config.vim
