@@ -1,6 +1,14 @@
 require('telescope').setup({
   defaults = { 
-    file_ignore_patterns = {"node_modules"}
+    file_ignore_patterns = {"node_modules"},
+    mappings = {
+      n = {
+        ['<c-d>'] = require('telescope.actions').delete_buffer
+      },
+      i = {
+        ['<c-d>'] = require('telescope.actions').delete_buffer
+      }
+    }
   }
 })
 require('telescope').load_extension('fzf')
@@ -41,5 +49,11 @@ map(
   "n",
   "<leader>of",
   [[<Cmd>lua require'telescope.builtin'.oldfiles()<CR>]],
+  { noremap = true, silent = true }
+)
+map(
+  "n",
+  "<leader>fh",
+  [[<Cmd>lua require'telescope.builtin'.search_history()<CR>]],
   { noremap = true, silent = true }
 )

@@ -1,7 +1,9 @@
 " map leader to Space
 let mapleader = " " 
+
 " Open nvimrc file
 "nnoremap <Leader>v :vsp ~/.config/nvim/init.vim<CR>
+"
 " Source nvimrc file
 nnoremap <Leader>sv :source ~/.config/nvim/init.vim<CR>
 inoremap jk <esc>
@@ -33,3 +35,6 @@ nnoremap <C-l> <C-w>l
 
 "remap unfold everthing to zz
 nnoremap zz zR
+
+nnoremap + :bnext<CR>
+nnoremap - :bprevious<CR>

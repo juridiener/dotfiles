@@ -68,13 +68,9 @@ set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
-"set foldlevel=99
-"set fillchars=fold:\
-"set foldtext=CustomFoldText()
-"setlocal foldmethod=expr
-"setlocal foldexpr=GetPotionFold(v:lnum)
-
-"bug in .php-file with html folds
-"set foldmethod=expr
-"set foldexpr=nvim_treesitter#foldexpr()
+set foldlevel=5
+set fillchars=fold:\
+set foldtext=CustomFoldText()
+setlocal foldmethod=expr
+setlocal foldexpr=GetPotionFold(v:lnum)
 
