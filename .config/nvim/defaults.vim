@@ -74,3 +74,5 @@ set foldtext=CustomFoldText()
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
 
+" Fix mouse issue using alacritty terminal
+"set ttymouse=sgr

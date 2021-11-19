@@ -9,6 +9,8 @@
 - npm i -g vim-language-server
 - yarn global add yaml-language-server
 
+- brew install alacritty
+
 
 
 
