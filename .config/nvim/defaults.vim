@@ -1,12 +1,5 @@
-let g:gruvbox_contrast_dark="hard"
-if exists("+termguicolors")
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-endif
-let g:gruvbox_invert_selection="0"
-colorscheme gruvbox       " Farbschema aktivieren
-set background=dark
 
+let g:airline_powerline_fonts = 1
 
 " ### Darstellungsoptionen
 syntax on           " Syntax Highlighting aktiveren
@@ -18,7 +11,6 @@ set ignorecase      " case insensitive
 set hlsearch        " highlight search
 set incsearch       " incremental search
 set tabstop=2	      " number of columns by tab
-set guifont=Hack
 set softtabstop=2   " see multiple spaces as tabstops
 set expandtab       " converts tabs to white space
 set shiftwidth=2    " width for autoindents
@@ -49,12 +41,12 @@ set noerrorbells
 "set backupdir=~/.cache/vim " Directory to store backup files
 
 set list lcs=tab:\|\
-
+let php_htmlInStrings = 1
 
 " open new split panes to right and below
 set splitright
 set splitbelow
-let g:airline_powerline_fonts = 1
+
 set path+=**
 set wildmode=longest,list,full
 set wildmenu
@@ -68,11 +60,50 @@ set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
+
 set foldlevel=5
 set fillchars=fold:\
 set foldtext=CustomFoldText()
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
+
+set background=dark
+
+if has("termguicolors")
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" let g:gruvbox_contrast_dark="hard"
+" let g:gruvbox_invert_selection="0"
+
+if has('termguicolors')
+  set termguicolors
+endif
+
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 1 "disable italic on comments
+let g:gruvbox_material_cursor = 'green'
+let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_material_visual = 'reverse'
+let g:gruvbox_material_menu_selection_background = 'green'
+let g:gruvbox_material_ui_contrast = 'high'
+let g:gruvbox_material_diagnostic_text_highlight = 1
+let g:gruvbox_material_diagnostic_line_highlight = 1
+let g:gruvbox_material_diagnostic_virtual_text = 'colored'
+let g:gruvbox_material_current_word = 'bold'
+let g:gruvbox_material_statusline_style = 'mix'
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
+let g:airline_theme = 'gruvbox_material'
+
+" let g:everforest_background='hard'
+" let g:airline_theme="everforest"
+" colorscheme everforest
+highlight Comment cterm=italic gui=italic
+
 
 " Fix mouse issue using alacritty terminal
 "set ttymouse=sgr

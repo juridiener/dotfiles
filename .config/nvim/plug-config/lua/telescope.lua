@@ -3,10 +3,10 @@ require('telescope').setup({
     file_ignore_patterns = {"node_modules"},
     mappings = {
       n = {
-        ['<c-x>'] = require('telescope.actions').delete_buffer
+        ['x'] = require('telescope.actions').delete_buffer
       },
       i = {
-        ['<c-x>'] = require('telescope.actions').delete_buffer
+        ['x'] = require('telescope.actions').delete_buffer
       }
     }
   }
