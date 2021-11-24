@@ -10,7 +10,19 @@
 - yarn global add yaml-language-server
 
 - brew install alacritty
+- brew install zsh
+  - chsh -s $(which zsh)
+  # If at any point you decide you don’t like zsh, you can revert to Bash using: chsh -s $(which bash)
 
+- Install ohmyzsh
+  - sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  - create custom .zshrc under ~/.config/zsh/.zshrc
+  - add .zshenv - file under ~/.zshenv
+    - ZDOTDIR=~/.config/zsh/
+
+
+# For managing dotfiles:
+- git init --bare $HOME/dotfiles
 
 
 

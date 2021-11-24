@@ -25,7 +25,8 @@ nnoremap <silent> <S-Left> :vertical resize -1<CR>
 nnoremap <silent> <S-Right> :vertical resize +1<CR>
 
 " remap folding za to <tab>
-nnoremap <tab> za
+"http://www.polarhome.com/vim/manual/v63/fold.html
+nnoremap <tab> zA
 
 "remap switch splits
 nnoremap <C-h> <C-w>h
@@ -37,7 +38,7 @@ nnoremap <C-l> <C-w>l
 nnoremap zz zR
 
 nnoremap + :bnext<CR>
-nnoremap - :bprevious<CR>
+nnoremap - :bdelete<CR>
 
 " Go to tab by number
 noremap <leader>1 1gt

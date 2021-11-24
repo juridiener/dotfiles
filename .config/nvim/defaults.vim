@@ -61,7 +61,8 @@ set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
 
-set foldlevel=5
+set foldlevel=0
+set foldnestmax=1
 set fillchars=fold:\
 set foldtext=CustomFoldText()
 setlocal foldmethod=expr
@@ -85,7 +86,7 @@ endif
 let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_enable_italic = 1
 let g:gruvbox_material_disable_italic_comment = 1 "disable italic on comments
-let g:gruvbox_material_cursor = 'green'
+let g:gruvbox_material_cursor = 'red'
 let g:gruvbox_material_transparent_background = 1
 let g:gruvbox_material_visual = 'reverse'
 let g:gruvbox_material_menu_selection_background = 'green'
