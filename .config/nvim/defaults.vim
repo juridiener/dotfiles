@@ -5,6 +5,7 @@ let g:airline_powerline_fonts = 1
 syntax on           " Syntax Highlighting aktiveren
 filetype plugin indent on " allow auto-indenting depending on file type
 set encoding=utf8
+set guifont=Hack:h13
 set nocompatible    " disable compability to old vi
 set showmatch	      " show matching
 set ignorecase      " case insensitive
@@ -38,10 +39,14 @@ set nowrap
 set linebreak
 set backspace=indent,eol,start
 set noerrorbells
+set tabpagemax=15
+set showtabline=2   " show always the tab bar
 "set backupdir=~/.cache/vim " Directory to store backup files
 
-set list lcs=tab:\|\
 let php_htmlInStrings = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " open new split panes to right and below
 set splitright
@@ -97,14 +102,9 @@ let g:gruvbox_material_diagnostic_virtual_text = 'colored'
 let g:gruvbox_material_current_word = 'bold'
 let g:gruvbox_material_statusline_style = 'mix'
 let g:gruvbox_material_better_performance = 1
+
 colorscheme gruvbox-material
 let g:airline_theme = 'gruvbox_material'
 
-" let g:everforest_background='hard'
-" let g:airline_theme="everforest"
-" colorscheme everforest
 highlight Comment cterm=italic gui=italic
 
-
-" Fix mouse issue using alacritty terminal
-"set ttymouse=sgr

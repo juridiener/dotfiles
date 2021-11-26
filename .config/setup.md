@@ -26,6 +26,13 @@
 
 
 
+
+
+
+# exit fullscreen in alacritty
+The default macOS binding to toggle fullscreen is Ctrl + Command + F.
+
+
 Not installed:
 - php // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#phpactor
 - lua // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
