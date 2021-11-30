@@ -40,8 +40,11 @@ set linebreak
 set backspace=indent,eol,start
 set noerrorbells
 set tabpagemax=15
-set showtabline=2   " show always the tab bar
-"set backupdir=~/.cache/vim " Directory to store backup files
+set showtabline=1   " show always the tab bar
+set scrolloff=20       " keep 20 lines visible above and below cursor at all times                                                                        
+set sidescrolloff=30   " keep 30 columns visible left and right of the cursor at all times
+
+
 
 let php_htmlInStrings = 1
 let g:airline_powerline_fonts = 1
@@ -64,7 +67,6 @@ set wildignore+=**/node_modules/*
 set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
-
 
 set foldlevel=0
 set foldnestmax=1
@@ -107,4 +109,3 @@ colorscheme gruvbox-material
 let g:airline_theme = 'gruvbox_material'
 
 highlight Comment cterm=italic gui=italic
-

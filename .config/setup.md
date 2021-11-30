@@ -20,6 +20,11 @@
   - add .zshenv - file under ~/.zshenv
     - ZDOTDIR=~/.config/zsh/
 
+- brew install tree
+  - to list files and directories in a tree structure
+
+
+
 
 # For managing dotfiles:
 - git init --bare $HOME/dotfiles
@@ -36,3 +41,27 @@ The default macOS binding to toggle fullscreen is Ctrl + Command + F.
 Not installed:
 - php // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#phpactor
 - lua // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
+
+
+# Bash & Git commands
+
+nvim **/*.html
+  - open all files in current and sub directories 
+
+git log --author=Juri 
+  - logs all commits from spesific user
+
+git log --stat --author=Juri  > ./redesign.log
+  - logs commits to a file
+
+mkdir -p foo/bar/baz
+  - create folders -p if not exist
+
+cp file1 /dir/
+for i in ~/folder1 ~/folder2; do cp  ~/test.txt $i; done 
+  - copy file to multiple dirs
+To copy whole directories you have to use the -r option:
+  - for i in ~/folder1 ~/folder2; do cp -r ~/folder3 $i; done
+
+Move file to dir
+mv /home/jack/testfile /home/jack/testfile2
