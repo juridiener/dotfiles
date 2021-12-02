@@ -42,26 +42,37 @@ Not installed:
 - php // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#phpactor
 - lua // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
 
+# Tmux Commands
+  - tmux detach 
+    - detach the session but doesn't kill it
 
-# Bash & Git commands
+# GIT Commands
 
-nvim **/*.html
-  - open all files in current and sub directories 
+  git log --author=Juri 
+    - logs all commits from spesific user
+  git log --stat --author=Juri  > ./redesign.log
+    - logs commits to a file
+  git log -p 
+    - logs the content to
 
-git log --author=Juri 
-  - logs all commits from spesific user
+## Logs the difference commits remote and local
+    logs the commits from remote branch to check which commits remote but not local
+      git log HEAD..origin/master
+    logs the commits from local branch to check which commits are local but not in remote
+      git log origin/master..HEAD
 
-git log --stat --author=Juri  > ./redesign.log
-  - logs commits to a file
+# Bash Commands
+  nvim **/*.html
+    - open all files in current and sub directories 
 
-mkdir -p foo/bar/baz
-  - create folders -p if not exist
+  mkdir -p foo/bar/baz
+    - create folders -p if not exist
 
-cp file1 /dir/
-for i in ~/folder1 ~/folder2; do cp  ~/test.txt $i; done 
-  - copy file to multiple dirs
-To copy whole directories you have to use the -r option:
-  - for i in ~/folder1 ~/folder2; do cp -r ~/folder3 $i; done
+  cp file1 /dir/
+  for i in ~/folder1 ~/folder2; do cp  ~/test.txt $i; done 
+    - copy file to multiple dirs
+  To copy whole directories you have to use the -r option:
+    - for i in ~/folder1 ~/folder2; do cp -r ~/folder3 $i; done
 
-Move file to dir
-mv /home/jack/testfile /home/jack/testfile2
+  Move file to dir
+  mv /home/jack/testfile /home/jack/testfile2

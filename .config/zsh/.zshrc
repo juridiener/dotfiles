@@ -11,6 +11,9 @@ export ZSH="/Users/juri.diener/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+# goes to directory where git repo is initialized
+alias cdg='cd $(git rev-parse --show-cdup)'
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/

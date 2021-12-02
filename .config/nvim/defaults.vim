@@ -1,11 +1,7 @@
-
-let g:airline_powerline_fonts = 1
-
 " ### Darstellungsoptionen
 syntax on           " Syntax Highlighting aktiveren
 filetype plugin indent on " allow auto-indenting depending on file type
-set encoding=utf8
-set guifont=Hack:h13
+set encoding=utf-8
 set nocompatible    " disable compability to old vi
 set showmatch	      " show matching
 set ignorecase      " case insensitive
@@ -21,7 +17,6 @@ set wildmode=longest,list " get bash-like tab completions
 set number          " Line Numbers anzeigen
 set relativenumber  " Relative Nummerierung anzeigen
 set showmode        " Aktuellen Modus in Statuszeile anzeigen
-set scrolloff=7     " Cursor bei Scroll weiter oben halten
 set mouse=a         " Scrollen mit der Mouse in Console und tmux
 set lazyredraw      " Weniger Redraws bei Macros und co.
 set cursorline      " Aktive Zeile markieren
@@ -41,14 +36,14 @@ set backspace=indent,eol,start
 set noerrorbells
 set tabpagemax=15
 set showtabline=1   " show always the tab bar
-set scrolloff=20       " keep 20 lines visible above and below cursor at all times                                                                        
+set scrolloff=10       " keep 10 lines visible above and below cursor at all times                                                                        
 set sidescrolloff=30   " keep 30 columns visible left and right of the cursor at all times
 
-
+set debug=throw
 
 let php_htmlInStrings = 1
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " open new split panes to right and below
@@ -68,12 +63,16 @@ set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
-set foldlevel=0
-set foldnestmax=1
-set fillchars=fold:\
-set foldtext=CustomFoldText()
-setlocal foldmethod=expr
-setlocal foldexpr=GetPotionFold(v:lnum)
+" set foldlevel=0
+" set foldnestmax=1
+" set fillchars=fold:\
+" set foldtext=CustomFoldText()
+" setlocal foldmethod=expr
+" setlocal foldexpr=GetPotionFold(v:lnum)
+
+
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 
 set background=dark
 
@@ -82,9 +81,6 @@ if has("termguicolors")
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-
-" let g:gruvbox_contrast_dark="hard"
-" let g:gruvbox_invert_selection="0"
 
 if has('termguicolors')
   set termguicolors
