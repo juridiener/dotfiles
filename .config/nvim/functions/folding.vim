@@ -13,9 +13,11 @@ function! GetPotionFold(lnum)
     return '>' . next_indent
   endif
 endfunction
+
 function! IndentLevel(lnum)
     return indent(a:lnum) / &shiftwidth
 endfunction
+
 function! NextNonBlankLine(lnum)
   let numlines = line('$')
   let current = a:lnum + 1

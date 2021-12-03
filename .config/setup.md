@@ -23,13 +23,14 @@
 - brew install tree
   - to list files and directories in a tree structure
 
+To install nerd font hack
+- brew tap homebrew/cask-fonts
+- brew install --cask font-hack-nerd-font
 
 
 
 # For managing dotfiles:
 - git init --bare $HOME/dotfiles
-
-
 
 
 

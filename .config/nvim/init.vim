@@ -9,7 +9,7 @@ source ~/.config/nvim/mappings.vim
 
 " functions
 source ~/.config/nvim/functions/autosave.vim
-source ~/.config/nvim/functions/folding.vim
+" source ~/.config/nvim/functions/folding.vim
 source ~/.config/nvim/functions/highlight_yank.vim
 
 " lsp config

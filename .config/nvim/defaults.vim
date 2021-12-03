@@ -63,18 +63,14 @@ set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
 
-" set foldlevel=0
-" set foldnestmax=1
+" Folding
+" set foldlevel=1
+" set foldnestmax=10
 " set fillchars=fold:\
 " set foldtext=CustomFoldText()
 " setlocal foldmethod=expr
 " setlocal foldexpr=GetPotionFold(v:lnum)
 
-
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
-
-set background=dark
 
 if has("termguicolors")
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -82,10 +78,7 @@ if has("termguicolors")
   set termguicolors
 endif
 
-if has('termguicolors')
-  set termguicolors
-endif
-
+set background=dark
 let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_enable_italic = 1
 let g:gruvbox_material_disable_italic_comment = 1 "disable italic on comments
