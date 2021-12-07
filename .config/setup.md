@@ -9,6 +9,8 @@
 - npm i -g vim-language-server
 - yarn global add yaml-language-server
 
+
+# Installation of tools
 - brew install alacritty
 - brew install zsh
   - chsh -s $(which zsh)
@@ -27,7 +29,9 @@ To install nerd font hack
 - brew tap homebrew/cask-fonts
 - brew install --cask font-hack-nerd-font
 
-
+Install tmux
+- brew install tmux
+in tmux.conf: type command: <C-a>I
 
 # For managing dotfiles:
 - git init --bare $HOME/dotfiles

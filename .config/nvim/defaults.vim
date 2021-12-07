@@ -45,6 +45,8 @@ let php_htmlInStrings = 1
 let g:airline_powerline_fonts = 1
 " let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+" disable right section trainling / mixed-content ...
+let g:airline#extensions#whitespace#enabled = 0
 
 " open new split panes to right and below
 set splitright
@@ -98,3 +100,16 @@ colorscheme gruvbox-material
 let g:airline_theme = 'gruvbox_material'
 
 highlight Comment cterm=italic gui=italic
+
+
+"tmux line config
+
+let g:tmuxline_preset = {
+    \'a'    : '#(cd #{pane_current_path}; git rev-parse --abbrev-ref HEAD)',
+    \'b'    : '#S',
+    \'c'    : '',
+    \'cwin' : ['#I', '#W'],
+    \'win'  : ['#I', '#W'],
+    \'x'    : '#{?client_prefix,Prefix,      }',
+    \'y'    : ['%a', '%e-%b-%Y', '%l:%M%p'],
+    \'z'    : '#h'}
