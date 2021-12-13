@@ -81,3 +81,17 @@ Not installed:
 
   Move file to dir
   mv /home/jack/testfile /home/jack/testfile2
+
+  Search text in files/directories:
+  -r or -R is recursive,
+  -n is line number, and
+  -w stands for match the whole word.
+  -l (lower-case L) can be added to just give the file name of matching files.
+  -e is the pattern used during the search
+
+  Examples:
+  - This will only search through those files which have .c or .h extensions:
+    - grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e "pattern"
+  - This will exclude searching all the files ending with .o extension:
+    - grep --exclude=\*.o -rnw '/path/to/somewhere/' -e "pattern"
+

@@ -11,7 +11,16 @@ require('nvim-treesitter.configs').setup({
     },
     additional_vim_regex_highlighting = false,
   },
-
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+	},
+	autotag = {
+		enable = true,
+	},
+	context_commentstring = {
+		enable = true,
+	},
   incremental_selection = {
       enable = true,
       keymaps = {
@@ -21,13 +30,16 @@ require('nvim-treesitter.configs').setup({
           node_decremental = "grm",
       },
   },
-
   indent = {
       enable = true
   },
 })
 
 -- vim.api.nvim_exec([[
---     set foldmethod=expr
---     set foldexpr=nvim_treesitter#foldexpr()
+--   set foldmethod=expr
+--   set foldexpr=nvim_treesitter#foldexpr()
 -- ]], true)
+
+vim.cmd([[set foldmethod=expr]])
+vim.cmd([[set foldlevel=10]])
+vim.cmd([[set foldexpr=nvim_treesitter#foldexpr()]])
