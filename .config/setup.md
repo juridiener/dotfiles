@@ -37,6 +37,11 @@ in tmux.conf: type command: <C-a>I
 - git init --bare $HOME/dotfiles
 
 
+# brew update
+## list outdated plugins
+- brew outdated
+## upgrade plugins
+- brew upgrade
 
 
 # exit fullscreen in alacritty
