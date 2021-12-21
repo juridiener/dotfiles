@@ -21,8 +21,10 @@ nnoremap <leader>t :sp term://zsh<CR>
 
 nnoremap <silent> <esc> :noh<cr><esc>
 
-nnoremap <silent> <S-Left> :vertical resize -1<CR>
-nnoremap <silent> <S-Right> :vertical resize +1<CR>
+nnoremap <silent> <S-Up> :resize +2<CR>
+nnoremap <silent> <S-Down> :resize -2<CR>
+nnoremap <silent> <S-Left> :vertical resize -2<CR>
+nnoremap <silent> <S-Right> :vertical resize +2<CR>
 
 " remap folding za to <tab>
 "http://www.polarhome.com/vim/manual/v63/fold.html
@@ -33,6 +35,17 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" visual mode
+" after indent line stay in visual mode
+vnoremap <silent> < <gv
+vnoremap <silent> > >gv
+
+"move text with shift j/k
+" vnoremap <silent> <A-j> :m .+1<CR>==
+" vnoremap <silent> <A-k> :m •-2<CR>==
+vnoremap <silent> p _dP
+
 
 "remap unfold everthing to zz
 nnoremap zz zR
