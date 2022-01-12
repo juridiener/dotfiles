@@ -44,7 +44,7 @@ vnoremap <silent> > >gv
 "move text with shift j/k
 " vnoremap <silent> <A-j> :m .+1<CR>==
 " vnoremap <silent> <A-k> :m •-2<CR>==
-vnoremap <silent> p _dP
+"vnoremap <silent> p _dP
 
 
 "remap unfold everthing to zz

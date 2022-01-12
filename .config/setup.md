@@ -1,4 +1,18 @@
+# Awesome Links to discover:
+https://github.com/rockerBOO/awesome-neovim
+https://github.com/swaywm/sway
+https://www.hammerspoon.org
+https://github.com/peterklijn/hammerspoon-shiftit
+https://github.com/maximbaz/dotfiles
+https://github.com/ianyh/Amethyst
+https://github.com/koekeishiya/yabai
+https://github.com/Kintaro/wtftw
+https://www.reddit.com/r/MacOSBeta/comments/qtk1qy/how_to_install_yabai_window_manager_on_macos/
+https://medium.com/@scr34mz/make-your-mac-keyboard-work-on-medium-and-others-editors-without-dead-keys-issues-french-keyboard-4666b72fa2ae
+
+
 # Installations to setup lsp
+
  // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 
 - npm i -g pyright
@@ -25,6 +39,8 @@
 - brew install tree
   - to list files and directories in a tree structure
 
+- brew install php
+
 To install nerd font hack
 - brew tap homebrew/cask-fonts
 - brew install --cask font-hack-nerd-font
@@ -32,6 +48,10 @@ To install nerd font hack
 Install tmux
 - brew install tmux
 in tmux.conf: type command: <C-a>I
+
+
+Install window manager:
+https://github.com/fikovnik/ShiftIt
 
 # For managing dotfiles:
 - git init --bare $HOME/dotfiles
