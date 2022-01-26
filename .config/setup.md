@@ -4,10 +4,15 @@ https://github.com/swaywm/sway
 https://www.hammerspoon.org
 https://github.com/peterklijn/hammerspoon-shiftit
 https://github.com/maximbaz/dotfiles
+
+Window Manager for macOS:
 https://github.com/ianyh/Amethyst
-https://github.com/koekeishiya/yabai
 https://github.com/Kintaro/wtftw
+
+Yabai:
+https://github.com/koekeishiya/yabai
 https://www.reddit.com/r/MacOSBeta/comments/qtk1qy/how_to_install_yabai_window_manager_on_macos/
+https://www.youtube.com/watch?v=JL1lz77YbUE
 https://medium.com/@scr34mz/make-your-mac-keyboard-work-on-medium-and-others-editors-without-dead-keys-issues-french-keyboard-4666b72fa2ae
 
 
@@ -75,6 +80,8 @@ Not installed:
 # Tmux Commands
   - tmux detach 
     - detach the session but doesn't kill it
+  - Save session
+    - prefix + ctrl + s
 
 # GIT Commands
 
