@@ -85,7 +85,8 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: Hack Nerd Font Mono
+    # family: Hack Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
     style: Regular
   bold:
     style: Bold

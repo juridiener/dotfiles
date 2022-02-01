@@ -77,7 +77,9 @@
   "Break out current window into a new tabview
   Ctrl+W T
   "Close every window in the current tabview but the current one
-  Ctrl+W o
+ 
+  To close all windows but the current one use:
+  CTRL+w, o = That is, first CTRL+w and then o Ctrl+W o
 
   :sp filename 	Open filename in horizontal split
   :vsp filename 	Open filename in vertical split
@@ -106,6 +108,12 @@
 
 # Important links
 ## tabs = https://www.linux.com/training-tutorials/vim-tips-using-tabs/
+
+# Comman Befehle
+
+get filetype name for files and plugins
+:echo &ft
+example open telescope and then type :echo &ft
 
 
 

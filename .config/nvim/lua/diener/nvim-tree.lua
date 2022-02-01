@@ -5,11 +5,11 @@ vim.g.nvim_tree_icons = {
   symlink = "",
   git = {
     unstaged = "",
-    staged = "S",
+    staged = "[✔]",
     unmerged = "",
     renamed = "➜",
     deleted = "",
-    untracked = "U",
+    untracked = "[*]",
     ignored = "◌",
   },
   folder = {
@@ -20,6 +20,8 @@ vim.g.nvim_tree_icons = {
     symlink = "",
   },
 }
+
+vim.g.nvim_tree_respect_buf_cwd = 1
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
@@ -78,9 +80,9 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 30,
+    width = 45,
     height = 30,
-    hide_root_folder = false,
+    hide_root_folder = true,
     side = "left",
     auto_resize = true,
     mappings = {

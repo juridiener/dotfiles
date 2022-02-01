@@ -15,6 +15,10 @@ https://www.reddit.com/r/MacOSBeta/comments/qtk1qy/how_to_install_yabai_window_m
 https://www.youtube.com/watch?v=JL1lz77YbUE
 https://medium.com/@scr34mz/make-your-mac-keyboard-work-on-medium-and-others-editors-without-dead-keys-issues-french-keyboard-4666b72fa2ae
 
+fzf Fuzzy Finder for Terminal
+https://github.com/junegunn/fzf
+https://github.com/sharkdp/fd
+https://github.com/sharkdp/bat
 
 # Installations to setup lsp
 
@@ -76,6 +80,24 @@ The default macOS binding to toggle fullscreen is Ctrl + Command + F.
 Not installed:
 - php // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#phpactor
 - lua // https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
+
+#Rails Commands 
+
+## Empty a table, delete all records in a table
+Use Antraege.delete_all
+https://dev.to/asyraf/deleting-all-data-from-a-table-in-ruby-on-rails-39he
+
+rails c 
+Antraege.delete_all
+
+## Add a Model with references to another table 
+rails g model modelname_to_create modelname_for_reference fieldname:datatype
+Example: rails g model antraege mitarbeiter:references name:string kommentar:string
+
+## Execute a task under lib/tasks
+bundle exec rake namespace:method_name
+Example: bundle exec rake query:import
+
 
 # Tmux Commands
   - tmux detach 
