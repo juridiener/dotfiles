@@ -90,6 +90,10 @@
   Ctrl-w n+ 	Increase size of current split by n lines
   Ctrl-w n- 	Decrease size of current split by n lines
 
+## change split orientation
+  ctrl-w H Ð Change horizontal splits to vertical
+  ctrl-w K Ð Change vertical splits to horizontal
+
 ## Visual Mode
   u = lowercase
 

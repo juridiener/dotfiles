@@ -120,6 +120,9 @@ Example: bundle exec rake query:import
     logs the commits from local branch to check which commits are local but not in remote
       git log origin/master..HEAD
 
+## show all commits
+  git reflog
+
 # Bash Commands
   nvim **/*.html
     - open all files in current and sub directories 
