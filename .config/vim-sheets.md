@@ -57,6 +57,10 @@
   `` = Return to the cursor position before the latest jump (undo the jump)
   #(hash) = go to the next word in the cursor
 
+## SEARCH
+  /and the word to search
+  if you want delete the word under the cursor with the search pattern type cgn | dgn
+
 ## Scrolling
   Ctrl + e - move screen down one line (without moving cursor)
   Ctrl + y - move screen up one line (without moving cursor)
@@ -83,16 +87,16 @@
 
   :sp filename 	Open filename in horizontal split
   :vsp filename 	Open filename in vertical split
-  Ctrl-w h Ctrl-w ← 	Shift focus to split on left of current
-  Ctrl-w l Ctrl-w → 	Shift focus to split on right of current
-  Ctrl-w j Ctrl-w ↓ 	Shift focus to split below the current
-  Ctrl-w k Ctrl-w ↑ 	Shift focus to split above the current
+  Ctrl-w h Ctrl-w √¢¬Ü¬ê 	Shift focus to split on left of current
+  Ctrl-w l Ctrl-w √¢¬Ü¬í 	Shift focus to split on right of current
+  Ctrl-w j Ctrl-w √¢¬Ü¬ì 	Shift focus to split below the current
+  Ctrl-w k Ctrl-w √¢¬Ü¬ë 	Shift focus to split above the current
   Ctrl-w n+ 	Increase size of current split by n lines
   Ctrl-w n- 	Decrease size of current split by n lines
 
 ## change split orientation
-  ctrl-w H � Change horizontal splits to vertical
-  ctrl-w K � Change vertical splits to horizontal
+  ctrl-w H √ê Change horizontal splits to vertical
+  ctrl-w K √ê Change vertical splits to horizontal
 
 ## Visual Mode
   u = lowercase
@@ -103,10 +107,10 @@
   dib | di( - delete all inside ()
   yy | Y = copy line including the newline character at the end
   y$ - copy line without the new line character at the end
-  yiw – yank the current word (excluding surrounding whitespace)
-  yaw – yank the current word (including leading or trailing whitespace)
-  ytx – yank from the current cursor position up to and before the character (til x)
-  yfx – yank from the current cursor position up to and including the character (find x)
+  yiw √¢¬Ä¬ì yank the current word (excluding surrounding whitespace)
+  yaw √¢¬Ä¬ì yank the current word (including leading or trailing whitespace)
+  ytx √¢¬Ä¬ì yank from the current cursor position up to and before the character (til x)
+  yfx √¢¬Ä¬ì yank from the current cursor position up to and including the character (find x)
   vit = HTML select everything inside this html-tag under the cursor
   vat = HTML select everything under the html-tag include itself
 
